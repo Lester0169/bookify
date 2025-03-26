@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf4e7;
+    display: flex;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.book-color {
+    color: black;
+}
+
+.wagon-color {
+    color: #f9d95f;
+    margin-left: 5px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.nav-item {
+    margin-bottom: 15px;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-item.active a, .nav-item a:hover {
+    background-color: #f9d95f;
+    color: #000;
+}
+
+.nav-item i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #333;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.statistic-value {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f9d95f;
+}
+
+.statistic-description {
+    font-size: 16px;
+    color: #777;
+}
+.sub-nav-list {
+    list-style-type: none; /* Removes the default circle bullets */
+    padding-left: 0; /* Removes the default left padding */
+    margin: 0; /* Removes default margin */
+}
+
+.sub-nav-item a {
+    padding-left: 15px; /* Adjust padding to align with other items */
+    text-decoration: none; /* Ensures the text is not underlined */
+    display: block; /* Makes the link take up the full width */
+    color: #666; /* Adjusts the color as needed */
+    border-radius: 5px; /* Matches the styling of other items */
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.sub-nav-item a:hover {
+    background-color: #f9d95f; /* Background color on hover */
+    color: #000; /* Text color on hover */
+}
+

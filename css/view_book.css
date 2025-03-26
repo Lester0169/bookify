@@ -1,0 +1,178 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf4e7;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #faf4e7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.book-color {
+    color: black;
+}
+
+.wagon-color {
+    color: #f9d95f;
+    margin-left: 5px;
+}
+
+.navbar {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 200px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.search-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-btn i {
+    padding: 10px;
+    font-size: 1rem;
+    color: #046cff;
+}
+
+.search-btn:hover i {
+    color: #1e90ff;
+}
+
+.user-info .btn {
+    margin-right: 10px;
+}
+
+.profile-icon-small {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.start-selling-btn {
+    background-color: #f9d95f;
+    border: none;
+    font-weight: bold;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.start-selling-btn:hover {
+    background-color: #e8c555;
+    color: #333;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #faf4e7;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f9d95f;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-muted {
+    color: #666;
+    font-size: 1.25rem;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 1.25rem;
+}
+
+h4 {
+    color: #000;
+    font-size: 1.75rem;
+    margin-top: 20px;
+}
+
+button {
+    margin-right: 10px;
+    font-size: 1.25rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

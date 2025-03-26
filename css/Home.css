@@ -1,0 +1,371 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf4e7; /* Set the background color for the entire page */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #faf4e7; /* Set the background color for the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow to header */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.book-color {
+    color: black;
+}
+
+.wagon-color {
+    color: #f9d95f;
+    margin-left: 5px; /* Adjust the gap as needed */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adjust the gap between nav items */
+    margin-left: 200px; /* Add left margin */
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Navbar CSS */
+
+.signup-btn {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.signup-btn:hover {
+    background-color: #046cff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #046cff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for smooth animation */
+}
+
+.search-bar button:hover {
+    background-color: #1e90ff; /* Change to blue background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Adjust margin for search form */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust margin as needed */
+    position: relative; /* Ensure relative positioning for absolute children */
+}
+
+/* Position search button inside the search input */
+.search-btn {
+    position: absolute;
+    right: 5px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none; /* Remove any border */
+    cursor: pointer;
+    outline: none; /* Remove outline on focus */
+}
+
+/* Adjust padding and size of the search button icon */
+.search-btn i {
+    padding: 10px;
+    font-size: 1rem;
+    color: #046cff; /* Icon color */
+}
+
+/* Style search button on hover */
+.search-btn:hover {
+    background-color: transparent; /* Change to desired hover background */
+}
+
+.carousel-inner img {
+    height: 400px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: #fff; /* White text color */
+}
+
+/* Remove background color from carousel control buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Make background transparent */
+    background-image: none; /* Remove the default icon background image */
+}
+
+/* Optionally, add a custom icon or color */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: '\f053'; /* Use Font Awesome icon for the previous arrow */
+    font-family: "Font Awesome 5 Free"; /* Specify the font family */
+    font-weight: 900; /* Set the font weight */
+    color: #000; /* Set the arrow color */
+    font-size: 2rem; /* Adjust the size of the icons */
+}
+
+.carousel-control-next-icon::before {
+    content: '\f054'; /* Use Font Awesome icon for the next arrow */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Reduce the clickable area */
+}
+
+/* Optional: Style for the clickable icon area */
+.icon-clickable {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #046cff; /* Custom indicator color */
+}
+
+/* Recommendations Section */
+.recommendations {
+    padding: 50px 0;
+    background-color: #faf4e7;
+}
+
+.recommendations .section-title {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 300px; /* Fixed width */
+    height: 500px; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto; /* Center the cards */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Add padding to ensure images are not too large */
+}
+
+.card-img-container img {
+    max-height: 80%;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+}
+
+.card-body {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 0.8rem; /* Smaller title font size */
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 0.7rem; /* Smaller text font size */
+    text-align: center;
+}
+
+.card-text.price {
+    font-size: 15px; /* Smaller price font size */
+    font-weight: bold;
+    color: #046cff;
+    text-align: center;
+}
+
+.view-all {
+    font-size: 1rem;
+    color: #f9d95f;
+    text-decoration: none;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+/* Make the next and previous buttons clickable only on the icon */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Reduce the clickable area */
+}
+
+.icon-clickable {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 20%;
+}
+
+.carousel.slide {
+    transition: transform 0.6s ease;
+}
+
+/* Add this to your existing CSS */
+.profile-icon-small {
+    width: 30px; /* Adjust width and height as needed */
+    height: 30px;
+    border-radius: 50%; /* Ensure it's circular */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-right: 5px; /* Optional: Adjust spacing */
+}
+
+/* Optional: Adjust margin-right for user-info or profile-btn to align properly */
+.user-info {
+    margin-right: 20px; /* Adjust as per your layout */
+}
+.start-selling-btn {
+    color: black; /* Initial text color */
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.start-selling-btn:hover {
+    color: #f9d95f; /* Change text color on hover */
+    text-decoration: none;
+}
+.modal-body a {
+    text-decoration: none;
+    color: #f9d95f;
+}
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Ensure dropdown items are displayed correctly */
+.navbar-nav .dropdown-menu {
+    position: absolute; /* Ensure dropdown is positioned correctly */
+    top: 100%; /* Position dropdown below the navbar item */
+    left: 0; /* Align dropdown with the left edge of the navbar item */
+    display: none; /* Hide dropdown by default */
+    background-color: #faf4e7; /* Match the background color with the navbar */
+    border-radius: 4px; /* Rounded corners for dropdown */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to dropdown */
+}
+
+/* Additional styles for dropdown items */
+.dropdown-menu .dropdown-item {
+    padding: 10px 15px; /* Adjust padding as needed */
+    color: black; /* Text color for dropdown items */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f9d95f; /* Highlight color on hover */
+    color: black; /* Text color on hover */
+}
+
+.start-selling-btn {
+    background-color: #f9d95f;
+    border: none;
+    font-weight: bold;
+    color: #000;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    text-decoration: none; /* Remove underline if the button is a link */
+}
+
+.start-selling-btn:hover {
+    background-color: #e8c555; /* Optional: Change background color on hover */
+    color: #333; /* Optional: Change text color on hover */
+}
+
+    .start-listing-btn {
+        background-color: #28a745; /* Custom green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin-top: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition-duration: 0.4s;
+    }
+    
+    .start-listing-btn:hover {
+        background-color: #218838; /* Darker green on hover */
+        color: white;
+    }
